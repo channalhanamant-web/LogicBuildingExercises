@@ -1,0 +1,34 @@
+package com.LogicBuilding;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class CountVowelsInAStringUsingHashSet {
+
+	public static void main(String[] args) {
+		String input = "Hello World";
+		int count = 0;
+		Set<Character> vowelSet = new HashSet<Character>();
+		vowelSet.add('a');
+		vowelSet.add('e');
+		vowelSet.add('i');
+		vowelSet.add('o');
+		vowelSet.add('u');
+		vowelSet.add('A');
+		vowelSet.add('E');
+		vowelSet.add('I');
+		vowelSet.add('O');
+		vowelSet.add('U');
+
+		for (int i = 0; i < input.length() - 1; i++) {
+			if (vowelSet.contains(input.charAt(i))) {
+
+				count++;
+			}
+
+		}
+		System.out.println(count);
+
+	}
+
+}
