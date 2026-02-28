@@ -23,6 +23,6 @@ public class StringManipulationType2 {
 			}
 		}
 		System.out.println(sb.toString());
-	}
+	} 
 
 }
