@@ -15,7 +15,7 @@ public class CalculateTheSumOfIntegersFromString {
 			}
 
 		}
-		//print sum
+		
 		System.out.println(sum);
 	}
 }
