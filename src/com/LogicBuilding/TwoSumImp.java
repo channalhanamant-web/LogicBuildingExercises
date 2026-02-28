@@ -5,6 +5,7 @@ import java.util.HashMap;
 public class TwoSumImp {
 
 	public static void main(String[] args) {
+		//calculate sum
 		int a[] = { 2, 7, 12, 6 };
 		int target = 9;
 		int result[] = calculateTwoSum(a, target);
