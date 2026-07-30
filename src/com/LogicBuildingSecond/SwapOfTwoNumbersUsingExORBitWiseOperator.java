@@ -1,4 +1,4 @@
-package com.LogicBuildingExerciseSecond;
+package com.LogicBuildingSecond;
 
 public class SwapOfTwoNumbersUsingExORBitWiseOperator {
 
