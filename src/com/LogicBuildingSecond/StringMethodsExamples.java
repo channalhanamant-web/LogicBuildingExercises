@@ -3,7 +3,7 @@ package com.LogicBuildingSecond;
 public class StringMethodsExamples {
 
 	public static void main(String[] args) {
-		String data = "   Apple  ";
+		String data = " Eat   Apple  ";
 		String data2 = "apple";
 
 		System.out.println(data.hashCode());
@@ -26,6 +26,27 @@ public class StringMethodsExamples {
 		System.out.println(data.contains("pp"));
 		
 		System.out.println(data.isEmpty());
+		
+		//part2
+		
+		System.out.println(data2.substring(1, 5));
+		
+		System.out.println(data.replace('A', 'b'));
+		
+		System.out.println(data.charAt(4));
+		
+		System.out.println(data.indexOf('p'));
+		
+		System.out.println(data.lastIndexOf('p'));
+		
+		//part3
+		
+		//System.out.println((data.split(" "));
+		
+		
+		
+		
+		
 	}
 
 }
