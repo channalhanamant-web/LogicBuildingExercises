@@ -1,6 +1,5 @@
 package com.LogicBuildingSecond;
 
-import java.util.Arrays;
 import java.util.HashMap;
 
 public class TwoSum {
@@ -22,7 +21,7 @@ public class TwoSum {
 			int complement = target - a[i];
 
 			if (map.containsKey(complement)) {
-				int result[] = { map.get(complement), i };
+				int result[] = {map.get(complement), i};
 
 				return result;
 
