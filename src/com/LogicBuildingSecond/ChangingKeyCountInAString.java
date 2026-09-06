@@ -11,7 +11,7 @@ public class ChangingKeyCountInAString {
 				count++;
 			}
 		}
-		System.out.println(count+" times key changeD");
+		System.out.println(count+" times key changed");
 
 	}
 
