@@ -3,8 +3,8 @@ package com.LogicBuildingSecond;
 public class FirstAndLastOccuranceOfCharOInAString {
 
 	public static void main(String[] args) {
-		String inputString = "Hellow World";
-		inputString.toLowerCase();
+		String inputString = "Hello WOrld";
+		inputString = inputString.toLowerCase();
 
 		int firstIndex = -1;
 		int lastIndex = -1;
@@ -21,8 +21,12 @@ public class FirstAndLastOccuranceOfCharOInAString {
 				break;
 			}
 		}
-		System.out.println("First occurance"+firstIndex);
-		System.out.println("Last occurance"+lastIndex);
+		if (firstIndex < 0) {
+			System.out.println("Given element not present in the string");
+		} else {
+			System.out.println("First occurance at Index " + firstIndex);
+			System.out.println("Last occurance at Index " + lastIndex);
+		}
 
 	}
 
