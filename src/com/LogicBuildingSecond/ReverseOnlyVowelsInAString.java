@@ -19,7 +19,7 @@ public class ReverseOnlyVowelsInAString {
 			} else if (vowelString.indexOf(inputArray[right]) == -1) {
 				right--;
 			} else {
-				char temp;
+				char temp;         
 				temp = inputArray[left];
 				inputArray[left] = inputArray[right];
 				inputArray[right] = temp;
