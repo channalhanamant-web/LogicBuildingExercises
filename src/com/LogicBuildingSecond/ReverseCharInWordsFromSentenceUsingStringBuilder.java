@@ -12,7 +12,7 @@ public class ReverseCharInWordsFromSentenceUsingStringBuilder {
 			result.append(reverseWord.reverse() + " ");
 
 		}
-		System.out.println(result);
+		System.out.println(result.toString().trim());
 	}
 
 }
