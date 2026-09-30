@@ -14,8 +14,8 @@ public class LowerCaseAndUpperCaseInAString {
 				lowerCaseCount++;
 			}
 		}
-		syso
-		
+		System.out.println("lowerCaseCount "+lowerCaseCount);
+		System.out.println("upperCaseCount "+upperCaseCount);
 
 	}
 
