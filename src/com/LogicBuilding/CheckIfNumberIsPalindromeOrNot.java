@@ -1,4 +1,4 @@
-package com.LogicBuildingSecond;
+package com.LogicBuilding;
 
 public class CheckIfNumberIsPalindromeOrNot {
 
