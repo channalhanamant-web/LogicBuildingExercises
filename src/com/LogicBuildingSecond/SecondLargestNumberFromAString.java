@@ -12,7 +12,7 @@ public class SecondLargestNumberFromAString {
 				if (x > firstLargest) {
 					secondLargest = firstLargest;
 					firstLargest = x;
-				} else if (x > secondLargest) {
+				} else if (x > secondLargest && x < firstLargest) {
 					secondLargest = x;
 				}
 			}
