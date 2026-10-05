@@ -2,10 +2,8 @@ package com.LogicBuildingSecond;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
 
-public class FindCommonElementsInTwoList {
+public class FindCommonElementsInTwoListUsingLambdaExpressions {
 
 	public static void main(String[] args) {
 		List<String> list1 = new ArrayList<String>();
@@ -23,14 +21,9 @@ public class FindCommonElementsInTwoList {
 		list2.add("five");
 		list2.add("six");
 
-		// lambda expressions
-		Set<String> resultSet = list1.stream().filter(x -> list2.contains(x)).collect(Collectors.toSet());
+		list1.retainAll(list2);
+		System.out.println(list1);
 
-		// using stream
-		Set<String> resultSet2 = list1.stream().filter(list2::contains).collect(Collectors.toSet());
-		
-		System.out.println(resultSet);
-		System.out.println(resultSet2);
 	}
 
 }
