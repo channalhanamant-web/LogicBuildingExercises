@@ -20,8 +20,9 @@ public class FindCommonElementsInTwoList {
 		list2.add("four");
 		list2.add("five");
 		list2.add("six");
-		
-		System.out.println(list2.contains(list1));
+
+		list1.retainAll(list2);
+		System.out.println(list1);
 
 	}
 
