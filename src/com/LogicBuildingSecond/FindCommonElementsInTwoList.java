@@ -37,6 +37,9 @@ public class FindCommonElementsInTwoList {
 
 		System.out.println(resultSet);
 		System.out.println(resultSet2);
+
+		list1.retainAll(list2);
+		System.out.println(list1);
 	}
 
 }
