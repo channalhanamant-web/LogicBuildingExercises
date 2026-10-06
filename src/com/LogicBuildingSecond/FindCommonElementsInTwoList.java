@@ -24,11 +24,17 @@ public class FindCommonElementsInTwoList {
 		list2.add("six");
 
 		// lambda expressions
-		Set<String> resultSet = list1.stream().filter(x -> list2.contains(x)).collect(Collectors.toSet());
+		// Set<String> resultSet = list1.stream().filter(x ->
+		// list2.contains(x)).collect(Collectors.toSet());
 
 		// using stream
+		// Set<String> resultSet2 =
+		// list1.stream().filter(list2::contains).collect(Collectors.toSet());
+
+		Set<String> resultSet = list1.stream().filter(x -> list2.contains(x)).collect(Collectors.toSet());
+
 		Set<String> resultSet2 = list1.stream().filter(list2::contains).collect(Collectors.toSet());
-		
+
 		System.out.println(resultSet);
 		System.out.println(resultSet2);
 	}
