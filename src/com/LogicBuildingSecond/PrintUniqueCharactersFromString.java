@@ -1,15 +1,14 @@
 package com.LogicBuildingSecond;
 
-
+import java.util.LinkedHashSet;
 import java.util.Set;
-import java.util.TreeSet;
 
 public class PrintUniqueCharactersFromString {
 
 	public static void main(String[] args) {
 		String input = "abbacdaab";
 		char inputArray[] = input.toCharArray();
-		Set<Character> set = new TreeSet<Character>();
+		Set<Character> set = new LinkedHashSet<Character>();
 		for (char c : inputArray) {
 			set.add(c);
 		}
