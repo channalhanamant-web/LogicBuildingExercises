@@ -9,10 +9,13 @@ public class PrintUniqueCharactersFromString {
 		String input = "abbacdaab";
 		char inputArray[] = input.toCharArray();
 		Set<Character> set = new LinkedHashSet<Character>();
+		StringBuilder sb = new StringBuilder();
 		for (char c : inputArray) {
-			set.add(c);
+			if (set.add(c))
+
+				sb.append(c);
 		}
-		System.out.println(set.toString());
+		System.out.println(sb.toString());
 	}
 
 }
